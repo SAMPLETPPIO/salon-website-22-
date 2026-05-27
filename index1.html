@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Glow Salon | Premium Beauty & Wellness in Sonipat</title>
+    <meta name="description" content="Lotus Glow Salon Sonipat offers premium beauty, hair and spa services. Located near Bharat Petrol Pump, Model Town. Book your glow-up today! Call +91 98765 43210">
+    <meta name="keywords" content="Salon in Sonipat, Beauty Parlour Sonipat, Lotus Glow Salon, Hair Spa Model Town, Bridal Makeup Sonipat">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #D946EF;
+            --primary-dark: #C026D3;
+            --secondary: #FDBA74;
+            --dark: #1F2937;
+            --light: #FFF7ED;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background:
+                linear-gradient(135deg, rgba(217, 70, 239, 0.9) 0%, rgba(253, 186, 116, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2074') center/cover;
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(217, 70, 239, 0.25);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(217, 70, 239, 0.5);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, #FFF 0%, var(--light) 100%);
+        }
+        /* Local CSS fallback: keeps the site styled when Tailwind CDN is blocked on GitHub Pages. */
+        *,::before,::after{box-sizing:border-box}body{margin:0;line-height:1.5}img{display:block;max-width:100%;height:auto}a{text-decoration:none;color:inherit}button,input,select{font:inherit}.container{width:100%;max-width:1280px;margin:auto}.fixed{position:fixed}.relative{position:relative}.absolute{position:absolute}.hidden{display:none}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.items-center{align-items:center}.items-start{align-items:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.flex-shrink-0{flex-shrink:0}.flex-1{flex:1}.top-0{top:0}.inset-0{inset:0}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-12{margin-top:3rem}.-mt-1{margin-top:-.25rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.ml-2{margin-left:.5rem}.mr-2{margin-right:.5rem}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-12{gap:3rem}.space-y-2>*+*{margin-top:.5rem}.space-y-3>*+*{margin-top:.75rem}.space-y-5>*+*{margin-top:1.25rem}.space-y-6>*+*{margin-top:1.5rem}.w-full{width:100%}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-px{width:1px}.h-full{height:100%}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.min-h-screen{min-height:100vh}.min-h-\[126px\]{min-height:126px}.min-h-\[260px\]{min-height:260px}.min-h-\[450px\]{min-height:450px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-md{max-width:28rem}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.border{border:1px solid}.border-2{border:2px solid}.border-t{border-top:1px solid}.border-white{border-color:#fff}.border-gray-300{border-color:#d1d5db}.border-red-500{border-color:#ef4444}.border-white\/10{border-color:rgba(255,255,255,.1)}.bg-white{background:#fff}.bg-white\/10{background:rgba(255,255,255,.1)}.bg-white\/20{background:rgba(255,255,255,.2)}.bg-white\/95{background:rgba(255,255,255,.95)}.bg-black\/50{background:rgba(0,0,0,.5)}.bg-gray-900{background:#111827}.bg-gray-100{background:#f3f4f6}.bg-fuchsia-50{background:#fdf4ff}.bg-fuchsia-100{background:#fae8ff}.bg-fuchsia-600{background:#c026d3}.bg-green-100{background:#dcfce7}.bg-green-500{background:#22c55e}.bg-blue-600{background:#2563eb}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right,var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(255,255,255,0))}.from-orange-50{--tw-gradient-from:#fff7ed;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(255,247,237,0))}.from-fuchsia-50{--tw-gradient-from:#fdf4ff;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(253,244,255,0))}.from-fuchsia-400{--tw-gradient-from:#e879f9;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(232,121,249,0))}.from-fuchsia-500{--tw-gradient-from:#d946ef;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(217,70,239,0))}.from-fuchsia-600{--tw-gradient-from:#c026d3;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(192,38,211,0))}.to-white{--tw-gradient-to:#fff}.to-orange-50{--tw-gradient-to:#fff7ed}.to-orange-300{--tw-gradient-to:#fdba74}.to-orange-400{--tw-gradient-to:#fb923c}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.text-transparent{color:transparent}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-20{padding-top:5rem;padding-bottom:5rem}.pt-16{padding-top:4rem}.pt-20{padding-top:5rem}.pt-8{padding-top:2rem}.pb-4{padding-bottom:1rem}.pb-8{padding-bottom:2rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1.1}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.tracking-wider{letter-spacing:.05em}.leading-tight{line-height:1.1}.leading-relaxed{line-height:1.625}.text-white{color:#fff}.text-white\/80{color:rgba(255,255,255,.8)}.text-white\/90{color:rgba(255,255,255,.9)}.text-gray-400{color:#9ca3af}.text-gray-500{color:#6b7280}.text-gray-600{color:#4b5563}.text-gray-700{color:#374151}.text-fuchsia-400{color:#e879f9}.text-fuchsia-500{color:#d946ef}.text-fuchsia-600{color:#c026d3}.text-yellow-300{color:#fde047}.text-yellow-400{color:#facc15}.text-green-600{color:#16a34a}.text-red-500{color:#ef4444}.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.05)}.shadow-md{box-shadow:0 4px 6px rgba(0,0,0,.1)}.shadow-lg{box-shadow:0 10px 15px rgba(0,0,0,.1)}.shadow-xl{box-shadow:0 20px 25px rgba(0,0,0,.1)}.shadow-2xl{box-shadow:0 25px 50px rgba(0,0,0,.25)}.blur-3xl{filter:blur(64px)}.opacity-30{opacity:.3}.backdrop-blur-md{backdrop-filter:blur(12px)}.backdrop-blur-sm{backdrop-filter:blur(4px)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition:all .3s ease}.transition-all{transition-property:all}.duration-300{transition-duration:.3s}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.col-span-2{grid-column:span 2/span 2}.row-span-2{grid-row:span 2/span 2}.-bottom-6{bottom:-1.5rem}.-right-2{right:-.5rem}.hover\:bg-gray-100:hover{background:#f3f4f6}.hover\:bg-fuchsia-600:hover{background:#c026d3}.hover\:bg-fuchsia-700:hover{background:#a21caf}.hover\:bg-green-500:hover{background:#22c55e}.hover\:bg-green-600:hover{background:#16a34a}.hover\:bg-blue-700:hover{background:#1d4ed8}.hover\:bg-white\/10:hover{background:rgba(255,255,255,.1)}.hover\:text-fuchsia-400:hover{color:#e879f9}.hover\:text-fuchsia-600:hover{color:#c026d3}.focus\:ring-2:focus,.focus\:ring-fuchsia-500:focus{box-shadow:0 0 0 2px #d946ef}.focus\:border-transparent:focus{border-color:transparent}
+        @media (min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:block{display:block}.sm\:-right-6{right:-1.5rem}}
+        @media (min-width:768px){.md\:hidden{display:none}.md\:block{display:block}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.md\:p-12{padding:3rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1.1}.md\:text-6xl{font-size:3.75rem;line-height:1}}
+        @media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:text-7xl{font-size:4.5rem;line-height:1}}
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Lotus Glow Salon",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035",
+      "url": "https://sampletppio.github.io/sallon-web2/",
+      "telephone": "+91-98765-43210",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Bharat Petrol Pump, Model Town",
+        "addressLocality": "Sonipat",
+        "addressRegion": "Haryana",
+        "postalCode": "131001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.9959,
+        "longitude": 77.0194
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "19:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white">
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 to-orange-300 flex items-center justify-center">
+                        <i class="fa-solid fa-spa text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-fuchsia-600 to-orange-400 bg-clip-text text-transparent">Lotus Glow</h1>
+                        <p class="text-xs text-gray-500 -mt-1">Premium Salon & Spa</p>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-fuchsia-600 font-medium">Home</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-fuchsia-600 font-medium">Services</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-fuchsia-600 font-medium">About</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-fuchsia-600 font-medium">Gallery</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-fuchsia-600 font-medium">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#booking" class="btn-primary text-white px-6 py-2.5 rounded-full font-semibold shadow-lg" aria-label="Book appointment at Lotus Glow Salon">Book Now</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700" aria-label="Toggle mobile menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-4">
+                    <a href="#home" class="text-gray-700 hover:text-fuchsia-600 font-medium py-2">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-fuchsia-600 font-medium py-2">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-fuchsia-600 font-medium py-2">About</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-fuchsia-600 font-medium py-2">Gallery</a>
+                    <a href="#contact" class="text-gray-700 hover:text-fuchsia-600 font-medium py-2">Contact</a>
+                    <a href="#booking" class="btn-primary text-white px-6 py-2.5 rounded-full font-semibold text-center" aria-label="Book appointment at Lotus Glow Salon">Book Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white fade-in">
+                    <div class="inline-block mb-4 px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium">
+                        <i class="fa-solid fa-star text-yellow-300"></i> Rated 4.9/5 by 500+ Clients
+                    </div>
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">Unleash Your<br>Natural Glow</h2>
+                    <p class="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
+                        Experience luxury beauty treatments at Sonipat's most trusted salon. From bridal makeovers to relaxing spa therapies.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#booking" class="bg-white text-fuchsia-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-xl" aria-label="Book your appointment now">
+                            Book Appointment <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition">View Services</a>
+                    </div>
+                    <div class="mt-12 flex flex-wrap items-center gap-6 md:gap-8">
+                        <div>
+                            <p class="text-3xl font-bold">10K+</p>
+                            <p class="text-sm text-white/80">Happy Clients</p>
+                        </div>
+                        <div class="hidden sm:block w-px h-12 bg-white/30"></div>
+                        <div>
+                            <p class="text-3xl font-bold">15+</p>
+                            <p class="text-sm text-white/80">Expert Stylists</p>
+                        </div>
+                        <div class="hidden sm:block w-px h-12 bg-white/30"></div>
+                        <div>
+                            <p class="text-3xl font-bold">5+ Yrs</p>
+                            <p class="text-sm text-white/80">Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-fuchsia-500 to-orange-300 rounded-3xl blur-3xl opacity-30"></div>
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=2069" alt="Salon interior" class="relative rounded-3xl shadow-2xl floating" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gradient-to-b from-white to-orange-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-fuchsia-600 font-semibold text-sm uppercase tracking-wider">Our Services</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-4">Premium Beauty Services</h2>
+                <p class="text-gray-600">Transform yourself with our comprehensive range of beauty and wellness treatments.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-500 to-orange-300 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-cut text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Hair Styling</h3>
+                    <p class="text-gray-600 mb-4">Cutting, coloring, keratin, smoothening and premium hair treatments by expert stylists.</p>
+                    <p class="text-fuchsia-600 font-semibold mb-4">Starting ₹499</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Hair Cut & Styling</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Global Hair Color</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Keratin Treatment</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-500 to-orange-300 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-wand-magic-sparkles text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Bridal Makeup</h3>
+                    <p class="text-gray-600 mb-4">Look flawless on your special day with HD, airbrush and traditional bridal packages.</p>
+                    <p class="text-fuchsia-600 font-semibold mb-4">Starting ₹7,999</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>HD & Airbrush Makeup</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Pre-Bridal Packages</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Trial Session Included</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-500 to-orange-300 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-spa text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Skin Care & Spa</h3>
+                    <p class="text-gray-600 mb-4">Rejuvenating facials, cleanups, manicure, pedicure and relaxing body spa therapies.</p>
+                    <p class="text-fuchsia-600 font-semibold mb-4">Starting ₹799</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Advanced Facials</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Body Spa & Massage</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Manicure & Pedicure</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-500 to-orange-300 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-hand-sparkles text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Nail Art</h3>
+                    <p class="text-gray-600 mb-4">Gel extensions, nail art, nail extensions and premium nail care services.</p>
+                    <p class="text-fuchsia-600 font-semibold mb-4">Starting ₹599</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Gel Nail Extensions</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Custom Nail Art</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Acrylic Nails</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-500 to-orange-300 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Makeup & Beauty</h3>
+                    <p class="text-gray-600 mb-4">Party makeup, engagement makeup, photoshoot and special occasion looks.</p>
+                    <p class="text-fuchsia-600 font-semibold mb-4">Starting ₹1,499</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Party Makeup</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Engagement Look</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Photoshoot Makeup</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-fuchsia-500 to-orange-300 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-gem text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Beauty Treatments</h3>
+                    <p class="text-gray-600 mb-4">Threading, waxing, bleach, D-tan and complete beauty maintenance services.</p>
+                    <p class="text-fuchsia-600 font-semibold mb-4">Starting ₹99</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Waxing & Threading</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Bleach & D-Tan</li>
+                        <li><i class="fa-solid fa-check text-fuchsia-500 mr-2"></i>Grooming Packages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=2070" alt="Lotus Glow Salon team" class="rounded-3xl shadow-2xl" loading="lazy">
+                    <div class="absolute -bottom-6 -right-2 sm:-right-6 bg-gradient-to-br from-fuchsia-500 to-orange-300 p-6 rounded-2xl shadow-xl text-white">
+                        <p class="text-4xl font-bold">5+</p>
+                        <p class="text-sm">Years of Excellence</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-fuchsia-600 font-semibold text-sm uppercase tracking-wider">About Us</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-6">Sonipat's Most Loved Beauty Destination</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Lotus Glow Salon, we believe every person deserves to look and feel their absolute best. Located in the heart of Model Town, Sonipat, we have been transforming lives through beauty for over 5 years.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our team of certified professionals uses premium international products and the latest techniques to ensure you get the glow you deserve. From bridal makeovers to weekly maintenance, we are your one-stop beauty paradise.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-fuchsia-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-certificate text-fuchsia-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Certified Experts</h4>
+                                <p class="text-sm text-gray-600">Trained professionals</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-fuchsia-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-droplet text-fuchsia-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Premium Products</h4>
+                                <p class="text-sm text-gray-600">L'Oreal, Schwarzkopf</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-fuchsia-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-shield-heart text-fuchsia-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Hygiene First</h4>
+                                <p class="text-sm text-gray-600">Sanitized equipment</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-fuchsia-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-indian-rupee-sign text-fuchsia-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Best Pricing</h4>
+                                <p class="text-sm text-gray-600">Value for money</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#booking" class="btn-primary text-white px-8 py-4 rounded-full font-semibold inline-block" aria-label="Book your visit to Lotus Glow Salon">
+                        Book Your Visit <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gradient-to-b from-orange-50 to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-fuchsia-600 font-semibold text-sm uppercase tracking-wider">Our Work</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-4">Transformations Gallery</h2>
+                <p class="text-gray-600">See the magic we create every day at Lotus Glow Sonipat.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="gallery-item rounded-2xl overflow-hidden col-span-2 row-span-2 min-h-[260px]">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=2071" alt="Bridal makeup" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden min-h-[126px]">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2069" alt="Hair styling" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden min-h-[126px]">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=2070" alt="Nail art" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden min-h-[126px]">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070" alt="Spa treatment" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden min-h-[126px]">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=2070" alt="Makeup service" class="w-full h-full object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-fuchsia-600 font-semibold text-sm uppercase tracking-wider">Testimonials</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600">Real stories from real people who trusted us with their glow.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">"Got my bridal makeup done here and it was absolutely stunning! The team understood my vision perfectly. Highly recommended for brides in Sonipat!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Priya Sharma" class="w-12 h-12 rounded-full" loading="lazy">
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <p class="text-sm text-gray-500">Model Town, Sonipat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">"Best keratin treatment I have ever had! My hair feels so smooth and manageable. The staff is super professional and the ambiance is amazing."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Neha Gupta" class="w-12 h-12 rounded-full" loading="lazy">
+                        <div>
+                            <h4 class="font-bold">Neha Gupta</h4>
+                            <p class="text-sm text-gray-500">Sector 14, Sonipat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">"Regular client for 2 years now. Their nail art and spa services are top-notch. Clean, hygienic and always up to date with latest trends!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="Riya Malhotra" class="w-12 h-12 rounded-full" loading="lazy">
+                        <div>
+                            <h4 class="font-bold">Riya Malhotra</h4>
+                            <p class="text-sm text-gray-500">Dev Colony, Sonipat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-gradient-to-br from-fuchsia-500 to-orange-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="bg-gradient-to-br from-fuchsia-600 to-orange-400 p-8 md:p-12 text-white">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Book Your Glow-Up Session</h2>
+                        <p class="mb-8 text-white/90">Ready to transform? Fill the form and we will confirm your appointment within 2 hours.</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-white/80">Call Us</p>
+                                    <a href="tel:+917015084928" class="font-semibold text-lg" aria-label="Call Lotus Glow Salon">+91 7015084928 </a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-white/80">Email Us</p>
+                                    <a href="mailto:himanshubalyan35@gmail.com" class="font-semibold">himanshubalyan35@mail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-white/80">Opening Hours</p>
+                                    <p class="font-semibold">Mon-Sat: 10 AM - 8 PM<br>Sun: 11 AM - 7 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-8 md:p-12">
+                        <form id="booking-form" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition" placeholder="Enter your name" aria-label="Full Name">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition" placeholder="10-digit mobile number" aria-label="Phone Number">
+                                <p id="phone-error" class="text-red-500 text-xs mt-1 hidden">Please enter a valid 10-digit Indian mobile number.</p>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Select Service *</label>
+                                <select id="service" name="service" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition" aria-label="Select Service">
+                                    <option value="">Choose a service</option>
+                                    <option value="hair">Hair Styling & Treatment</option>
+                                    <option value="bridal">Bridal Makeup</option>
+                                    <option value="skin">Skin Care & Spa</option>
+                                    <option value="nail">Nail Art & Extensions</option>
+                                    <option value="makeup">Party/Engagement Makeup</option>
+                                    <option value="beauty">Beauty Treatments</option>
+                                </select>
+                            </div>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="date" class="block text-sm font-medium text-gray-700 mb-2">Preferred Date *</label>
+                                    <input type="date" id="date" name="date" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition" aria-label="Preferred Date">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-sm font-medium text-gray-700 mb-2">Preferred Time *</label>
+                                    <input type="time" id="time" name="time" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent outline-none transition" aria-label="Preferred Time">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary w-full text-white py-4 rounded-lg font-semibold shadow-lg" aria-label="Confirm booking appointment">
+                                Confirm Booking <i class="fa-solid fa-check ml-2"></i>
+                            </button>
+                            <p class="text-xs text-gray-500 text-center">By booking, you agree to our terms. We will call to confirm within 2 hours.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-fuchsia-600 font-semibold text-sm uppercase tracking-wider">Visit Us</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2 mb-4">Find Us in Sonipat</h2>
+                <p class="text-gray-600">We are located in the heart of Model Town, easily accessible from all parts of Sonipat.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-gradient-to-br from-fuchsia-50 to-orange-50 rounded-2xl p-8 mb-6">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-fuchsia-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Address</h4>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Lotus+Glow+Salon+Near+Bharat+Petrol+Pump+Model+Town+Sonipat+Haryana+131001" target="_blank" rel="noopener" class="text-gray-600 hover:text-fuchsia-600 transition" aria-label="Open location in Google Maps">
+                                        Near Bharat Petrol Pump, Model Town<br>Sonipat, Haryana 131001
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-fuchsia-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Phone</h4>
+                                    <a href="tel:+919876543210" class="text-gray-600 hover:text-fuchsia-600" aria-label="Call Lotus Glow Salon">+91 8950448397</a><br>
+                                    <a href="tel:+919876543211" class="text-gray-600 hover:text-fuchsia-600" aria-label="Call Lotus Glow Salon alternate number">+91 7015084928</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-fuchsia-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                    <a href="mailto:himanshubalyan35@gmail.com" class="text-gray-600 hover:text-fuchsia-600">himanshubalyan35@gmail</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-fuchsia-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">WhatsApp</h4>
+                                    <a href="https://wa.me/7015084928" target="_blank" rel="noopener" class="text-gray-600 hover:text-fuchsia-600" aria-label="Chat on WhatsApp">Chat with us instantly</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-3">
+                        <a href="tel:+917015084928" class="bg-fuchsia-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-fuchsia-700 transition text-center" aria-label="Call Lotus Glow Salon">
+                            <i class="fa-solid fa-phone mr-2"></i>Call Now
+                        </a>
+                        <a href="https://wa.me/7015084928" target="_blank" rel="noopener" class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition text-center" aria-label="WhatsApp himanshubalyan">
+                            <i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp
+                        </a>
+                        <a href="" target="_blank" rel="noopener" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition text-center" aria-label="Get Directions to Lotus Glow Salon">
+                            <i class="fa-solid fa-map mr-2"></i>Directions
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl h-full min-h-[450px]">
+                        <iframe
+                            src="https://www.google.com/maps?q=Near+Bharat+Petrol+Pump+Model+Town+Sonipat&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Lotus Glow Salon Location Map"
+                            aria-label="Google Maps location for Lotus Glow Salon">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 to-orange-300 flex items-center justify-center">
+                            <i class="fa-solid fa-spa text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold bg-gradient-to-r from-fuchsia-400 to-orange-300 bg-clip-text text-transparent">Lotus Glow</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">Sonipat's premier beauty destination for luxury hair, skin and spa treatments.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-fuchsia-600 transition" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-fuchsia-600 transition" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-fuchsia-600 transition" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/917015084928" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-green-500 transition" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-fuchsia-400 transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-fuchsia-400 transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-fuchsia-400 transition">About Us</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-fuchsia-400 transition">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-fuchsia-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-fuchsia-400 transition">Hair Styling</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-fuchsia-400 transition">Bridal Makeup</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-fuchsia-400 transition">Skin Care & Spa</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-fuchsia-400 transition">Nail Art</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-fuchsia-400 transition">Beauty Treatments</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot mt-1 text-fuchsia-400"></i>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Lotus+Glow+Salon+Near+Bharat+Petrol+Pump+Model+Town+Sonipat+Haryana+131001" target="_blank" rel="noopener" class="hover:text-fuchsia-400 transition" aria-label="Open location in Google Maps">
+                                Near Bharat Petrol Pump<br>Model Town, Sonipat 131001
+                            </a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-phone mt-1 text-fuchsia-400"></i>
+                            <span>+91 7015084928</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-envelope mt-1 text-fuchsia-400"></i>
+                            <span>himanshubalyan35@gmail.com</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-clock mt-1 text-fuchsia-400"></i>
+                            <span>Mon-Sat: 10AM-8PM<br>Sun: 11AM-7PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 Lotus Glow Salon Sonipat. All Rights Reserved. | Designed with <i class="fa-solid fa-heart text-fuchsia-500"></i> for Beauty</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fa-solid fa-check text-green-600 text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Booking Request Ready!</h3>
+            <p class="text-gray-600 mb-6">Your booking details have been prepared. Please send the WhatsApp message to confirm your appointment request.</p>
+            <button id="close-modal" class="btn-primary text-white px-8 py-3 rounded-lg font-semibold" aria-label="Close confirmation modal">Got It!</button>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('shadow-md', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (!target) return;
+
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const phoneInput = document.getElementById('phone');
+        const phoneError = document.getElementById('phone-error');
+
+        phoneInput.addEventListener('input', (event) => {
+            event.target.value = event.target.value.replace(/[^0-9]/g, '');
+            const phoneRegex = /^[6-9][0-9]{9}$/;
+            const isInvalid = event.target.value && !phoneRegex.test(event.target.value);
+            phoneError.classList.toggle('hidden', !isInvalid);
+            phoneInput.classList.toggle('border-red-500', isInvalid);
+        });
+
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        const bookingForm = document.getElementById('booking-form');
+        const successModal = document.getElementById('success-modal');
+        const closeModal = document.getElementById('close-modal');
+        const salonWhatsAppNumber = '917015084928';
+
+        bookingForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const phoneRegex = /^[6-9][0-9]{9}$/;
+            if (!phoneRegex.test(phoneInput.value)) {
+                phoneError.classList.remove('hidden');
+                phoneInput.focus();
+                return;
+            }
+
+            const formData = new FormData(bookingForm);
+            const serviceSelect = document.getElementById('service');
+            const selectedService = serviceSelect.options[serviceSelect.selectedIndex].text;
+            const message = [
+                'Hello Lotus Glow Salon, I want to book an appointment.',
+                '',
+                `Name: ${formData.get('name')}`,
+                `Phone: ${formData.get('phone')}`,
+                `Service: ${selectedService}`,
+                `Preferred Date: ${formData.get('date')}`,
+                `Preferred Time: ${formData.get('time')}`
+            ].join('\n');
+            const whatsappUrl = `https://wa.me/${salonWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+
+            successModal.classList.remove('hidden');
+            window.open(whatsappUrl, '_blank', 'noopener');
+            bookingForm.reset();
+            dateInput.setAttribute('min', today);
+        });
+
+        closeModal.addEventListener('click', () => {
+            successModal.classList.add('hidden');
+        });
+
+        successModal.addEventListener('click', (event) => {
+            if (event.target === successModal) {
+                successModal.classList.add('hidden');
+            }
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
